@@ -24,7 +24,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -56,7 +57,7 @@ nav {
     height: fit-content;
     width: 100%;
     position: sticky;
-    background-color: white;
+    background-color: #fff;
     padding: 0.5em 0;
     border-bottom: 1px solid #e2e2e2;
 
@@ -71,7 +72,7 @@ nav {
 
 .top-left a {
     text-decoration: none;
-    color: black;
+    color: #000;
     font-weight: bold;
 }
 
@@ -89,7 +90,26 @@ nav {
     line-height: 11px;
     padding: 8px;
     border-radius: 0.3em;
-    color: white;
+    color: #fff;
 }
 
+/* MAIN ARTICLE */
+
+main {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Sriracha', cursive;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+main img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
 
