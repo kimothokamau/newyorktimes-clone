@@ -101,15 +101,27 @@ main {
 
 h1 {
     font-family: 'Sriracha', cursive;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 3rem;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 500;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-main img {
+main img{
     display: block;
-    width: 70%;
     margin: 0 auto;
+    width: 65%;
 }
 
+main figcaption {
+    color: #666;
+    font-size: 0.9375rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
