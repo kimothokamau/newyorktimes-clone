@@ -53,10 +53,9 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 0.5em;
-    height: fit-content;
     width: 100%;
-    position: sticky;
+    position: fixed;
+    top: 0;
     background-color: #fff;
     padding: 0.5em 0;
     border-bottom: 1px solid #e2e2e2;
@@ -112,16 +111,38 @@ h1 {
     margin-right: auto;
 }
 
+figure {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main img{
     display: block;
     margin: 0 auto;
-    width: 65%;
+    width: 100%;
 }
 
 main figcaption {
     color: #666;
     font-size: 0.9375rem;
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
+
+.main-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+article {
+    grid-column: 2/3;
+    top-margin: 4em;
+}
+
+.fab {
+    background-color: pink;
+}
+
