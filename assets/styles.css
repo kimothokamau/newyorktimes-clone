@@ -134,15 +134,56 @@ main figcaption {
 .main-article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    color: #333;
+}
 
+.article-column {
+    grid-column: 2/3;
+    margin-top: 4em;
 }
 
 article {
-    grid-column: 2/3;
-    top-margin: 4em;
+    margin-top: 2em;
 }
 
-.fab {
-    background-color: pink;
+article p {
+    margin-bottom: 15px;
+    line-height: 1.875rem;;
+    font-size: 1.25rem;
+}
+
+.writer {
+    color: #515151;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.writer a {
+    text-decoration: none;
+    color: #515151;
+}
+
+.writer a:hover {
+    text-decoration: underline;
+}
+
+.article-icons {
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.article-icons p {
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.icons {
+    margin-top: -20px;
+    display: block;
+    float: right;
 }
 
