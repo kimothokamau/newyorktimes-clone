@@ -99,7 +99,7 @@ main {
 }
 
 h1 {
-    font-family: 'Sriracha', cursive;
+    font-family: 'PT Serif', serif;
     font-size: 2.2rem;
     line-height: 3rem;
     font-style: italic;
@@ -242,7 +242,7 @@ hr {
     width: 945px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .inflation-grid {
@@ -295,4 +295,41 @@ hr {
 .text8 {
     grid-column: 4/5;
     grid-row: 4/5;
+}
+
+.other-version {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgb(102, 102, 102);
+}
+
+.comments-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.comments-social > div {
+
+}
+
+.comments-social > button {
+    background-color: rgb(86, 123, 149);
+    border-color: rbg(50, 104, 145);
+    border: 1px solid;
+    font-weight: 600;
+    line-height: 11px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 5px 50px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+    line-height: 1.5rem;
+    cursor: pointer;
+
+}
+
+.comments-social > div > i {
+    margin-left: 0.5em;
 }
