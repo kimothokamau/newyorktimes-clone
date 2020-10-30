@@ -335,6 +335,7 @@ hr {
 
 .bottom-articles {
     display: grid;
+    margin-top: 4em;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 500px 500px 250px;
 }
@@ -346,6 +347,8 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 40px 295px 70px;
+    border-top: 1px solid grey;
+    padding-top: 1em;
 }
 
 .suggestions span {
@@ -360,6 +363,12 @@ hr {
     height: 80px;
     width: 80px;
     margin: 1em;
+}
+
+.suggestions p {
+    color: black;
+    cursor: pointer;
+    font-weight: 800;
 }
 
 .suggestion-schedule {
@@ -433,21 +442,6 @@ hr {
     grid-row: 3/4;
 }
 
-.space {
-    grid-column: 2/5;
-    grid-row: 3/5;
-}
-
-.picks {
-    grid-column: 2/5;
-    grid-row: 5/6;
-}
-
-.popular {
-    grid-column: 5/6;
-    grid-row: repeat(auto, auto-fit);
-}
-
 .suggestions > button {
     width: 270px;
     cursor: pointer;
@@ -462,10 +456,9 @@ hr {
     vertical-align: middle;
     border: 1px solid rgb(18, 18, 18);
     margin-top: 2em;
-
-
 }
 
+/* SPACE ARTICLES */
 .space {
     grid-column: 2/5;
     grid-row: 2/3;
@@ -536,4 +529,95 @@ hr {
 .space-dates {
     font-size: 12px;
     color: rgb(153,153,153);
+}
+
+/* EDITOR PICKS */
+.picks {
+    grid-column: 2/5;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    border-top: 1px solid grey;
+}
+
+.picks > p {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 1em;
+}
+
+.picks1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.picks2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.picks3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.picks > p {
+    color: black;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.picks > p:hover {
+    text-decoration: underline;
+}
+
+.picks > div > p {
+    color: rgb(18, 18, 18);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.picks-dates{
+    font-size: 12px;
+    color: rgb(153,153,153);
+}
+
+/* POPULAR ARTICLES */
+.popular {
+    grid-column: 5/6;
+    grid-row: repeat(auto, auto-fit);
+    margin-left: 2em;
+    border-top: 1px solid grey;
+    padding-top: 1em;
+}
+
+.popular p {
+    color: black;
+    cursor: pointer;
+    font-weight: 800;
+    padding-bottom: 1em;
+}
+
+.popular li {
+    border-top: 1px solid rgb(212, 208, 208);
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    line-height: 22px;
+    font-weight: 500;
+    color: rgb(18, 18, 18);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    letter-spacing: 0.02em
+}
+
+.popular li:hover {
+    cursor: pointer;
+    color: rgb(128, 121, 121);
 }
