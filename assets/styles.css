@@ -112,6 +112,10 @@ h1 {
     margin-right: auto;
 }
 
+b {
+    font-weight: 700;
+}
+
 figure {
     width: 65%;
     margin-left: auto;
@@ -231,19 +235,32 @@ hr {
     margin: 1em 0;
 }
 
-
-
 .inflation > h3 {
+    font-family: 'PT Serif', serif;
     width: 945px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding-top: 1em;
 }
 
 .inflation > p {
     width: 945px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #666;
+    padding-bottom: 1em;
+}
 
+.inflation-span {
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .inflation-grid {
@@ -261,8 +278,7 @@ hr {
 
 .text {
     font-size: small;
-    margin-top: 4em;
-
+    margin-top: 6em;
 }
 
 .text1 {
@@ -304,14 +320,18 @@ hr {
     color: rgb(102, 102, 102);
 }
 
+.video-span {
+    font-size: 16px ;
+    line-height: 16px;
+    font-weight: 400;
+    height: 23px;
+    color: #666;
+}
+
 .comments-social {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.comments-social > div {
-
 }
 
 .comments-social > button {
@@ -649,7 +669,6 @@ hr {
     cursor: pointer;
 }
 
-
 .nyt-links {
     display: flex;
     justify-content: space-between;
@@ -680,4 +699,47 @@ hr {
 
 .subscribe-links > .subscribe-subscribe >li {
     font-weight: 700;
+}
+
+.subscribe-subscribe i {
+    margin-right: 5px;
+}
+
+.small-links {
+    font-size: 11px;
+    line-height: 21px;
+    font-weight: 500;
+    height: 23px;
+}
+
+.small-links-separator {
+    border-bottom: 1px solid lightgray;
+    padding: 0 0 1em 0;
+}
+
+footer {
+    width: 67%;
+    border-top: 1px solid lightgray;
+    margin: 1em auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    display: inline-flex;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 400;
+    height: 23px;
+    padding: 10px 5px;
+    color: #666;
+}
+
+footer li:hover {
+    color: rgb(102, 102, 102);
+    text-decoration: underline;
+    cursor: pointer;
 }
