@@ -406,7 +406,7 @@ hr {
 }
 
 .suggestion1 {
-    border: 1px solid black;
+    border: 1px solid rgb(212, 208, 208);
     grid-column: 1/2;
     grid-row: 2/3;
     width: 273px;
@@ -414,7 +414,7 @@ hr {
 }
 
 .suggestion2 {
-    border: 1px solid black;
+    border: 1px solid rgb(212, 208, 208);
     grid-column: 2/3;
     grid-row: 2/3;
     width: 273px;
@@ -430,7 +430,7 @@ hr {
 }
 
 .suggestion3 {
-    border: 1px solid black;
+    border: 1px solid rgb(212, 208, 208);
     grid-column: 3/4;
     grid-row: 2/3;
     width: 273px;
@@ -620,4 +620,64 @@ hr {
 .popular li:hover {
     cursor: pointer;
     color: rgb(128, 121, 121);
+}
+
+
+.links-title > img {
+    height: 36px;
+    width: 220px;
+    float: left;
+}
+
+
+.links-title {
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-top: 2px double grey;
+    padding-top: 1em;
+}
+
+.links-title > span {
+    float: right;
+    color: rgb(86, 123, 149);
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.nyt-links {
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    margin: 2em auto;
+}
+.nyt-links >div > ul > li {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    height: 23px;
+    cursor: pointer;
+}
+
+.nyt-links >div >ul >li:hover {
+    text-decoration: underline;
+
+}
+
+.nyt-links > div >ul >:nth-child(1) {
+    font-weight: 700;
+}
+
+.subscribe-links {
+    border-left: 1px solid lightgray;
+    padding-left: 2em;
+}
+
+.subscribe-links > .subscribe-subscribe >li {
+    font-weight: 700;
 }
