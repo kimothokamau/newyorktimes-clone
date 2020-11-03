@@ -203,6 +203,15 @@ aside > span > a {
   text-decoration: none;
 }
 
+.suggestions > a {
+  color: black;
+  font-weight: 800;
+  grid-row: 1/2;
+  grid-column: 1/3;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
 .top-left > a:hover {
   text-decoration: underline;
 }
@@ -554,16 +563,15 @@ hr {
   padding-bottom: 1em;
 }
 
-.suggestions > a {
+.picks > a > p {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 1em;
   color: black;
   font-weight: 800;
-  grid-row: 1/2;
-  grid-column: 1/3;
-  margin-top: 0;
-  margin-bottom: 1em;
 }
 
-.picks > a > p {
+.space > a > p {
   grid-column: 1/2;
   grid-row: 1/2;
   margin-top: 1em;
@@ -696,14 +704,6 @@ hr {
   column-gap: 20px;
   row-gap: 30px;
   border-top: 1px solid grey;
-}
-
-.space > a > p {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  margin-top: 1em;
-  color: black;
-  font-weight: 800;
 }
 
 .space > a:hover {
