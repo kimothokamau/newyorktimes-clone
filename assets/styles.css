@@ -314,7 +314,7 @@ aside {
   font-weight: 700;
 }
 
-aside > img {
+aside > a > img {
   height: 75px;
   width: 75px;
   margin-bottom: 1em;
@@ -467,6 +467,10 @@ hr {
   grid-template-rows: 500px 500px 250px;
 }
 
+.bottom-articles a {
+  text-decoration: none;
+}
+
 /* SUGGESTED ARTICLES */
 .suggestions {
   grid-column: 2/5;
@@ -492,13 +496,16 @@ hr {
   margin: 1em;
 }
 
-.suggestions > p {
+.suggestions > a > p {
   color: black;
-  cursor: pointer;
   font-weight: 800;
   grid-row: 1/2;
   grid-column: 1/2;
   margin-top: 0;
+}
+
+.suggestions > a > p:hover {
+  text-decoration: underline;
 }
 
 .suggestion-schedule {
@@ -600,13 +607,16 @@ hr {
   border-top: 1px solid grey;
 }
 
-.space > p {
+.space > a > p {
   grid-column: 1/2;
   grid-row: 1/2;
   margin-top: 1em;
   color: black;
-  cursor: pointer;
   font-weight: 800;
+}
+
+.space > a > p:hover {
+  text-decoration: underline;
 }
 
 .space1 {
@@ -639,49 +649,18 @@ hr {
   grid-row: 3/4;
 }
 
-.picks > p {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  margin-top: 1em;
-  color: black;
-  cursor: pointer;
-  font-weight: 800;
-}
-
-.popular p {
-  color: black;
-  cursor: pointer;
-  font-weight: 800;
-  padding-bottom: 1em;
-}
-
-.space > div > p {
-  color: rgb(18, 18, 18);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  cursor: pointer;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.picks > div > p {
-  color: rgb(18, 18, 18);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  cursor: pointer;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.space > p:hover {
-  text-decoration: underline;
-}
-
 .space-dates {
   font-size: 12px;
   color: rgb(153, 153, 153);
+}
+
+.space > div > a > p {
+  color: rgb(18, 18, 18);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 /* EDITOR PICKS */
@@ -694,6 +673,27 @@ hr {
   column-gap: 20px;
   row-gap: 30px;
   border-top: 1px solid grey;
+}
+
+.picks > a > p {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 1em;
+  color: black;
+  font-weight: 800;
+}
+
+.picks > a > p:hover {
+  text-decoration: underline;
+}
+
+.picks > div > a > p {
+  color: rgb(18, 18, 18);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .picks1 {
@@ -709,10 +709,6 @@ hr {
 .picks3 {
   grid-column: 3/4;
   grid-row: 2/3;
-}
-
-.picks > p:hover {
-  text-decoration: underline;
 }
 
 .picks-dates {
@@ -740,7 +736,13 @@ footer li {
   padding-top: 1em;
 }
 
-.popular li {
+.popular p {
+  color: black;
+  font-weight: 800;
+  padding-bottom: 1em;
+}
+
+.popular > ul > a > li {
   border-top: 1px solid rgb(212, 208, 208);
   font-size: 16px;
   font-family: 'PT Serif', serif;
@@ -752,26 +754,25 @@ footer li {
   letter-spacing: 0.02em;
 }
 
-footer li:hover {
-  color: rgb(102, 102, 102);
-  text-decoration: underline;
-  cursor: pointer;
+/* NEW YORK TIMES BOTTOM LINKS */
+
+.nyt-links > div > ul > a {
+  text-decoration: none;
 }
 
-.nyt-links > div > ul > li {
+.nyt-links > div > ul > a > li {
+  color: black;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   height: 23px;
-  cursor: pointer;
 }
 
 .popular li:hover {
-  cursor: pointer;
   color: rgb(128, 121, 121);
 }
 
-.links-title >a >img {
+.links-title > a > img {
   height: 36px;
   width: 220px;
   float: left;
@@ -793,26 +794,28 @@ footer li:hover {
   font-size: 11px;
   line-height: 11px;
   font-weight: 400;
-  cursor: pointer;
 }
 
 .nyt-links {
   display: flex;
   justify-content: space-between;
   width: 67%;
-  margin: 2em auto;
+  margin: 1em auto 6em auto;
 }
 
-.subscribe-links > .subscribe-subscribe > li {
+.subscribe-links > .subscribe-subscribe > a > li {
   font-weight: 700;
+  margin-bottom: 0.5em;
+  font-size: 16px;
 }
 
-.nyt-links > div > ul > li:hover {
+.nyt-links > div > ul > a > li:hover {
   text-decoration: underline;
 }
 
 .nyt-links > div > ul > :nth-child(1) {
   font-weight: 700;
+  font-size: 14px;
 }
 
 .subscribe-links {
@@ -833,6 +836,8 @@ footer li:hover {
   margin-bottom: 1em;
 }
 
+/* FOOTER */
+
 footer {
   width: 67%;
   border-top: 1px solid lightgray;
@@ -842,4 +847,9 @@ footer {
 footer ul {
   display: flex;
   justify-content: center;
+}
+
+footer li:hover {
+  color: rgb(102, 102, 102);
+  text-decoration: underline;
 }
