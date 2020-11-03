@@ -492,10 +492,13 @@ hr {
   margin: 1em;
 }
 
-.suggestions p {
+.suggestions > p {
   color: black;
   cursor: pointer;
   font-weight: 800;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-top: 0;
 }
 
 .suggestion-schedule {
@@ -768,7 +771,7 @@ footer li:hover {
   color: rgb(128, 121, 121);
 }
 
-.links-title > img {
+.links-title >a >img {
   height: 36px;
   width: 220px;
   float: left;
