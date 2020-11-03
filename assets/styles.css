@@ -536,8 +536,6 @@ hr {
   margin-right: auto;
 }
 
-
-
 /* SUGGESTED ARTICLES */
 .suggestions {
   grid-column: 2/5;
@@ -747,8 +745,6 @@ hr {
   color: rgb(153, 153, 153);
 }
 
-
-
 /* EDITOR PICKS */
 .picks {
   grid-column: 2/5;
@@ -810,10 +806,7 @@ footer li:hover {
   text-decoration: underline;
 }
 
-
-
 /* NEW YORK TIMES BOTTOM LINKS */
-
 .popular li:hover {
   color: rgb(128, 121, 121);
 }
