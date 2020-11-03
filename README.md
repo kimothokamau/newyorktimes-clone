@@ -1,4 +1,4 @@
-# newyorktimes-clone
+# The New York Times Article's Page Clone
 This project aims to clone The New York Times article webpage using HTML & CSS. 
 
 ![screenshot](./assets/imgs/Screenshot.jpg)
@@ -24,7 +24,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 1- Clone the repository
-```https://github.com/kimothokamau/newyorktimes-clone.git
+```
+https://github.com/kimothokamau/newyorktimes-clone.git
 ```
 
 2- Open the folder on VS Code, right click the index.html file and click on "Open With Live Server"
@@ -57,3 +58,5 @@ Feel free to check the [issues page]
 Give a ⭐️ if you like this project!
 
 ## 📝 License
+
+This project is [MIT](https://github.com/kimothokamau/newyorktimes-clone/blob/fix-lint-errors/License.md)
