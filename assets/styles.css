@@ -542,9 +542,10 @@ hr {
   grid-row: 1/2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40px 295px 70px;
+  grid-auto-rows: auto;
   border-top: 1px solid grey;
   padding-top: 1em;
+  column-gap: 1em;
 }
 
 .popular p {
@@ -553,23 +554,16 @@ hr {
   padding-bottom: 1em;
 }
 
-.suggestions > a > p {
+.suggestions > a {
   color: black;
   font-weight: 800;
   grid-row: 1/2;
-  grid-column: 1/2;
+  grid-column: 1/3;
   margin-top: 0;
+  margin-bottom: 1em;
 }
 
 .picks > a > p {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  margin-top: 1em;
-  color: black;
-  font-weight: 800;
-}
-
-.space > a > p {
   grid-column: 1/2;
   grid-row: 1/2;
   margin-top: 1em;
@@ -645,16 +639,16 @@ hr {
   border: 1px solid rgb(212, 208, 208);
   grid-column: 1/2;
   grid-row: 2/3;
-  width: 273px;
-  height: 295px;
+  width: 100%;
+  height: auto;
 }
 
 .suggestion2 {
   border: 1px solid rgb(212, 208, 208);
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 273px;
-  height: 295px;
+  width: 100%;
+  height: auto;
 }
 
 .suggestions > div > i {
@@ -669,17 +663,14 @@ hr {
   border: 1px solid rgb(212, 208, 208);
   grid-column: 3/4;
   grid-row: 2/3;
-  width: 273px;
-  height: 295px;
-}
-
-.suggestions button {
-  grid-column: 2/3;
-  grid-row: 3/4;
+  width: 100%;
+  height: auto;
 }
 
 .suggestions > button {
-  width: 270px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 100%;
   cursor: pointer;
   border-radius: 3px;
   color: white;
@@ -692,6 +683,7 @@ hr {
   vertical-align: middle;
   border: 1px solid rgb(18, 18, 18);
   margin-top: 2em;
+  margin-bottom: 1.5em;
 }
 
 /* SPACE ARTICLES */
@@ -700,13 +692,21 @@ hr {
   grid-row: 2/3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40px 1fr 1fr;
+  grid-auto-rows: auto;
   column-gap: 20px;
   row-gap: 30px;
   border-top: 1px solid grey;
 }
 
-.space > a > p:hover {
+.space > a > p {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 1em;
+  color: black;
+  font-weight: 800;
+}
+
+.space > a:hover {
   text-decoration: underline;
 }
 
@@ -869,10 +869,41 @@ footer li:hover {
 footer {
   width: 67%;
   border-top: 1px solid lightgray;
-  margin: 1em auto;
+  margin: 1em auto 5em auto;
 }
 
 footer ul {
   display: flex;
   justify-content: center;
+}
+
+/* STICKY BOTTOM NAVBAR */
+
+.bottom-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 0.5em 0;
+  border-top: 1px solid black;
+}
+
+.bottom-navbar > h5 {
+  font-weight: 500;
+}
+
+.bottom-right {
+  display: flex;
+  width: 8em;
+  padding-left: 15em;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.bottom-right > a > i {
+  margin-left: 5em;
 }
