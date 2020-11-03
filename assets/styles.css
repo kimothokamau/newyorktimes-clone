@@ -216,25 +216,20 @@ b {
   font-weight: 700;
 }
 
-figure {
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main img {
+.telescope > img {
   display: block;
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
   width: 100%;
 }
 
-main figcaption {
+.telescope > span {
   color: #666;
   font-size: 0.9375rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .main-article {
   display: grid;
@@ -469,6 +464,18 @@ hr {
 
 .bottom-articles a {
   text-decoration: none;
+}
+
+.bottom-articles figure {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-articles img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* SUGGESTED ARTICLES */
